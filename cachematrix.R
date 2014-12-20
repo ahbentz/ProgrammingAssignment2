@@ -1,6 +1,6 @@
 ################################################################################
 ## These functions set up, solve and cache the inverse of a matrix into memory##
-## so they can be called on when needed.                                      ##
+## so they it be called on when needed.                                      ##
 ################################################################################
 
 #########################  makeCacheMatrix  ####################################
@@ -12,7 +12,7 @@
 
 makeCacheMatrix <- function(x = matrix()) {
       inv <- NULL #Set inverse to null for later use and as a reset upon 
-                  #calling function for the second or more time.
+                  #calling function after the first time
       set <- function(y) {
             #Assigns the matrix to an object (set) within the 'makeCacheMatrix' 
             #function environment - the '<<-' allows this to be in the 
